@@ -4,7 +4,11 @@ body {
     display: flex;
     flex-direction: column;
     background-color: black;
-    
+}
+
+.Title {
+    color: white;
+    font-size: 100px;
 }
 
 
@@ -24,6 +28,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    animation: Sunplaceholder 0.1s infinite;
 
 }
 
@@ -152,12 +157,23 @@ body {
 }
 
 
+@keyframes Sunplaceholder {
+    from {
+        transform: rotate(0) translate(0) rotate(0);
+        flex: 1;
+    } to {
+        transform: rotate(360deg) translate(0) rotate(-360deg);
+        flex: 1;
+    }
+}
 
 @keyframes PlanetOrbit1 {
     from {
         transform: rotate(0) translate(600px) rotate(0);
+        flex: 1;
     } to {
         transform: rotate(360deg) translate(600px) rotate(-360deg);
+        flex: 1;
     }
     
 }
@@ -165,8 +181,10 @@ body {
 @keyframes PlanetOrbit2 {
     from {
         transform: rotate(0) translate(900px) rotate(0);
+        flex: 1;
     } to {
         transform: rotate(360deg) translate(900px) rotate(-360deg);
+        flex: 1;
     }
     
 }
@@ -174,8 +192,10 @@ body {
 @keyframes PlanetOrbit3 {
     from {
         transform: rotate(0) translate(1600px) rotate(0);
+        flex: 1;
     } to {
         transform: rotate(360deg) translate(1600px) rotate(-360deg);
+        flex: 1;
     }
     
 }
@@ -183,8 +203,10 @@ body {
 @keyframes PlanetOrbit4 {
     from {
         transform: rotate(0) translate(2400px) rotate(0);
+        flex: 1;
     } to {
         transform: rotate(360deg) translate(2400px) rotate(-360deg);
+        flex: 1;
     }
     
 }
@@ -192,8 +214,10 @@ body {
 @keyframes PlanetOrbit5 {
     from {
         transform: rotate(0) translate(4800px) rotate(0);
+        flex: 1;
     } to {
         transform: rotate(360deg) translate(4800px) rotate(-360deg);
+        flex: 1;
     }
     
 }
@@ -201,8 +225,10 @@ body {
 @keyframes PlanetOrbit6 {
     from {
         transform: rotate(0) translate(6200px) rotate(0);
+        flex: 1;
     } to {
         transform: rotate(360deg) translate(6200px) rotate(-360deg);
+        flex: 1;
     }
     
 }
@@ -210,8 +236,10 @@ body {
 @keyframes PlanetOrbit7 {
     from {
         transform: rotate(0) translate(7900px) rotate(0);
+        flex: 1;
     } to {
         transform: rotate(360deg) translate(7900px) rotate(-360deg);
+        flex: 1;
     }
     
 }
@@ -219,8 +247,10 @@ body {
 @keyframes PlanetOrbit8 {
     from {
         transform: rotate(0) translate(8500px) rotate(0);
+        flex: 1;
     } to {
         transform: rotate(360deg) translate(8500px) rotate(-360deg);
+        flex: 1;
     }
     
 }
@@ -237,7 +267,9 @@ body {
 @keyframes satelliteorbit {
     from {
         transform: rotate(0) translate(160px) rotate(0);
+        flex: 1;
     } to {
         transform: rotate(360deg) translate(160px) rotate(-360deg);
+        flex: 1;
     }
 }
