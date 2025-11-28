@@ -1,0 +1,299 @@
+body {
+    min-height: 500dvh;
+    min-width: 500dvh;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.Title {
+    color: white;
+    font-size: 100px;
+}
+
+
+.storage {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.sun {
+    height: 375px;
+    width: 375px;
+    background-color: orange;
+    border-radius: 100%;
+    background-image: url(https://images.nationalgeographic.org/image/upload/t_edhub_resource_key_image/v1638882786/EducationHub/photos/sun-blasts-a-m66-flare.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: Sunplaceholder 0.1s infinite;
+
+}
+
+.mercury {
+
+    width: 35px;
+    height: 35px;
+    background-color: grey;
+    border-radius: 100%;
+    position: absolute;
+    animation: PlanetOrbit1 30s infinite;
+    animation-timing-function: linear;
+    background-image: url(https://science.nasa.gov/wp-content/uploads/2023/11/mercury-messenger-globe-pia15162.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.venus {
+
+    width: 90px;
+    height: 90px;
+    background-color: grey;
+    border-radius: 100%;
+    position: absolute;
+    animation: PlanetOrbit2 70s infinite;
+    animation-timing-function: linear;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Venus_globe.jpg/330px-Venus_globe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.earth {
+
+    width: 120px;
+    height: 120px;
+    background-color: lightblue;
+    border-radius: 100%;
+    position: absolute;
+    animation: PlanetOrbit3 100s infinite;
+    animation-timing-function: linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://www1.grc.nasa.gov/wp-content/uploads/earth-e1751905742954-600x393.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.mars {
+
+    width: 50px;
+    height: 50px;
+    background-color: maroon;
+    border-radius: 100%;
+    position: absolute;
+    animation: PlanetOrbit4 200s infinite;
+    animation-timing-function: linear;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Mars_-_August_30_2021_-_Flickr_-_Kevin_M._Gill.png/330px-Mars_-_August_30_2021_-_Flickr_-_Kevin_M._Gill.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.jupiter {
+
+    width: 250px;
+    height: 250px;
+    background-color: darkorange;
+    border-radius: 100%;
+    position: absolute;
+    animation: PlanetOrbit5 1200s infinite;
+    animation-timing-function: linear;
+    background-image: url(data:image/jpeg;base64,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);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.saturn {
+
+    width: 275px;
+    height: 275px;
+    background-color: beige;
+    border-radius: 100%;
+    position: absolute;
+    animation: PlanetOrbit6 2400s infinite;
+    animation-timing-function: linear;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Saturn_in_natural_colors_%28captured_by_the_Hubble_Space_Telescope%29.jpg/250px-Saturn_in_natural_colors_%28captured_by_the_Hubble_Space_Telescope%29.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.uranus {
+
+    width: 150px;
+    height: 150px;
+    background-color: skyblue;
+    border-radius: 100%;
+    position: absolute;
+    animation: PlanetOrbit7 4200s infinite;
+    animation-timing-function: linear;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/69/Uranus_Voyager2_color_calibrated.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.neptune {
+
+    width: 250px;
+    height: 250px;
+    background-color: darkblue;
+    border-radius: 100%;
+    position: absolute;
+    animation: PlanetOrbit8 8900s infinite;
+    animation-timing-function: linear;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRldAU2bwCSAVteM_kuW9VOQGxzj4mmfyiWA&s);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+@keyframes Sunplaceholder {
+    from {
+        transform: rotate(0) translate(0) rotate(0);
+        flex: 1;
+    } to {
+        transform: rotate(360deg) translate(0) rotate(-360deg);
+        flex: 1;
+    }
+}
+
+@keyframes PlanetOrbit1 {
+    from {
+        transform: rotate(0) translate(600px) rotate(0);
+        flex: 1;
+    } to {
+        transform: rotate(360deg) translate(600px) rotate(-360deg);
+        flex: 1;
+    }
+    
+}
+
+@keyframes PlanetOrbit2 {
+    from {
+        transform: rotate(0) translate(900px) rotate(0);
+        flex: 1;
+    } to {
+        transform: rotate(360deg) translate(900px) rotate(-360deg);
+        flex: 1;
+    }
+    
+}
+
+@keyframes PlanetOrbit3 {
+    from {
+        transform: rotate(0) translate(1600px) rotate(0);
+        flex: 1;
+    } to {
+        transform: rotate(360deg) translate(1600px) rotate(-360deg);
+        flex: 1;
+    }
+    
+}
+
+@keyframes PlanetOrbit4 {
+    from {
+        transform: rotate(0) translate(2400px) rotate(0);
+        flex: 1;
+    } to {
+        transform: rotate(360deg) translate(2400px) rotate(-360deg);
+        flex: 1;
+    }
+    
+}
+
+@keyframes PlanetOrbit5 {
+    from {
+        transform: rotate(0) translate(4800px) rotate(0);
+        flex: 1;
+    } to {
+        transform: rotate(360deg) translate(4800px) rotate(-360deg);
+        flex: 1;
+    }
+    
+}
+
+@keyframes PlanetOrbit6 {
+    from {
+        transform: rotate(0) translate(6200px) rotate(0);
+        flex: 1;
+    } to {
+        transform: rotate(360deg) translate(6200px) rotate(-360deg);
+        flex: 1;
+    }
+    
+}
+
+@keyframes PlanetOrbit7 {
+    from {
+        transform: rotate(0) translate(7900px) rotate(0);
+        flex: 1;
+    } to {
+        transform: rotate(360deg) translate(7900px) rotate(-360deg);
+        flex: 1;
+    }
+    
+}
+
+@keyframes PlanetOrbit8 {
+    from {
+        transform: rotate(0) translate(8500px) rotate(0);
+        flex: 1;
+    } to {
+        transform: rotate(360deg) translate(8500px) rotate(-360deg);
+        flex: 1;
+    }
+    
+}
+.satellite {
+    width: 15px;
+    height: 15px;
+    background-color: grey;
+    border-radius: 100%;
+    position: absolute;
+    animation: satelliteorbit 5s infinite;
+    animation-timing-function: linear;
+}
+.satellite2 {
+    width: 15px;
+    height: 15px;
+    background-color: grey;
+    border-radius: 100%;
+    position: absolute;
+    animation: mars2orbit 10s infinite;
+    animation-timing-function: linear;
+}
+
+
+
+
+@keyframes satelliteorbit {
+    from {
+        transform: rotate(0) translate(160px) rotate(0);
+        flex: 1;
+    } to {
+        transform: rotate(360deg) translate(160px) rotate(-360deg);
+        flex: 1;
+    }
+}
+
+@keyframes mars2orbit {
+    from {
+        transform: rotate(0) translate(100px) rotate(0);
+        flex: 1;
+    } to {
+        transform: rotate(360deg) translate(100px) rotate(-360deg);
+        flex: 1;
+    }
+
+}
+
